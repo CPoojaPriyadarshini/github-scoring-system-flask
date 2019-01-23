@@ -21,7 +21,7 @@ def get_url():
         gh_score += 10
 
     else:
-        print("No such GitHub account found")
+        return "No such GitHub account found"
 
     url_repo=url+"?tab=repositories"
     response_repo = requests.get(url_repo)
